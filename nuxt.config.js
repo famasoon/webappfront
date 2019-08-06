@@ -3,6 +3,10 @@ const pkg = require('./package')
 module.exports = {
   mode: 'universal',
 
+  env: {
+    apiServer: process.env.API_SERVER || 'http://127.0.0.1:8080'
+  },
+
   /*
   ** Headers of the page
   */
